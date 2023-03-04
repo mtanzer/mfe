@@ -1,4 +1,4 @@
-ame: deploy-marketing
+name: deploy-marketing
 
 on:
   push:

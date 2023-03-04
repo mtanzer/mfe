@@ -1,9 +1,9 @@
-ame: deploy-auth
+name: deploy-auth
 
 on:
   push:
     branches:
-      - main
+      - 
     paths:
       - auth/**
 
