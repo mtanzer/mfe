@@ -92,7 +92,7 @@ export default function Album() {
               short so folks don&apos;t simply skip over it entirely.
             </Typography>
             <div className={classes.heroButtons}>
-              <Grid container spacing={2} justifyContent="center">
+              <Grid container spacing={2} justify="center">
                 <Grid item>
                   <Link to="/pricing">
                     <Button variant="contained" color="primary">
@@ -128,7 +128,7 @@ export default function Album() {
                     </Typography>
                     <Typography>
                       This is a media card. You can use this section to describe
-                      the content.
+                      the content!
                     </Typography>
                   </CardContent>
                   <CardActions>

@@ -5,20 +5,20 @@ const packageJson = require('../package.json');
 
 const domain = process.env.PRODUCTION_DOMAIN;
 
-//
 const prodConfig = {
   mode: 'production',
   output: {
     filename: '[name].[contenthash].js',
-    publicPath: '/container/latest/'
+    publicPath: '/container/latest/',
   },
   plugins: [
     new ModuleFederationPlugin({
       name: 'container',
       remotes: {
-        marketing: `marketing@${domain}/marketing/latest/remoteEntry.js`
+        marketing: `marketing@${domain}/marketing/latest/remoteEntry.js`,
+        marketing: `authg@${domain}/auth/latest/remoteEntry.js`,
       },
-      shared: packageJson.dependencies
+      shared: packageJson.dependencies,
     }),
   ],
 };
